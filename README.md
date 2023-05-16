@@ -29,7 +29,7 @@ host    all             all             0.0.0.0/0               trust
 create role admin with login superuser createdb createrole inherit replication connection limit -1 password 'admin';
 ```
 
-5. modifica la password del utente postgres
+5. modifica la password del utente postgres - modifica la password di default ubuntu
 
 ```
 ALTER USER postgres PASSWORD 'ubuntu';
@@ -67,4 +67,8 @@ studio --backup-list {nome del database}
 
 12. per altri comandi visualizza la guida ufficiale [vai al sito](https://wirebear.co.uk/software/studio-server-client)
 
-13. hai finito la configurazione complimenti
+13. NB: http:// ip-del-tuo-server/pgadmin4/login
+username: la mail che hai inserito prima
+password: la tua password di postgres default ubuntu
+
+14.  hai finito la configurazione complimenti
