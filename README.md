@@ -2,10 +2,10 @@
 
 ## 🛠️ Passaggi di installazione:
 
-1. esegui il file installer.sh
+1. scarica ed esegui il file installer.sh
 
 ```bash
-./installer.sh
+git clone https://github.com/ArduinoDenis/install-server-for-davinci-resolve.git && cd install-server-for-davinci-resolve/ && chmod 700 installer.sh && ./installer.sh
 ```
 2. aggiungi la seguente riga sulla configurazione del database
 
