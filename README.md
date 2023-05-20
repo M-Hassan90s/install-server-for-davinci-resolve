@@ -7,13 +7,13 @@
 ```bash
 git clone https://github.com/ArduinoDenis/install-server-for-davinci-resolve.git && cd install-server-for-davinci-resolve/ && chmod 700 installer.sh && ./installer.sh
 ```
-2. aggiungi la seguente riga sulla configurazione del database
+2. aggiungi la seguente riga sulla configurazione del database postgresql-15
 
 ```
 listen_addresses = '*'
 ```
 
-3. aggiungi la seguente riga alla configurazione dei ruoli sul database
+3. aggiungi la seguente riga alla configurazione dei ruoli sul database pg_hba.conf
 
 ```
 local   all             admin                                   md5
