@@ -61,31 +61,31 @@ exit
 15.  a questo punto configura il server per davinci resolve
 
 ```bash
-studio --create {nome del database} {crea la tua password}
+sudo studio --create {nome del database} {crea la tua password}
 ```
 
 16. visualizza i database 
 
 ```bash
-studio --list
+sudo studio --list
 ```
 
 17. cancella il database
 
 ```bash
-studio --delete {nome del database}
+sudo studio --delete {nome del database}
 ```
 
 18. crea un autobackup del database
 
 ```bash
-studio --backup {nome del database}
+sudo studio --backup {nome del database}
 ```
 
 19. visualizza i backup del database
 
 ```bash
-studio --backup-list {nome del database}
+sudo studio --backup-list {nome del database}
 ```
 
 20. per altri comandi visualizza la guida ufficiale [vai al sito](https://wirebear.co.uk/software/studio-server-client)
