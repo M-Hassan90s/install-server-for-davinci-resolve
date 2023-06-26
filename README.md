@@ -39,46 +39,59 @@ ALTER USER postgres PASSWORD 'ubuntu';
 ```bash
 exit
 ```
-7. esci dal utente
+7. esci dal utente e aspetta che finisca l'installazione
 
 ```bash
 exit
 ```
+8. ad un certo punto chiede di inserire un indirizzo email e mettete la vostra email per entrare nel database.
 
-8.  configura il server per davinci resolve
+9. create una password e confermala riscrivendola alla prossima domanda.
+
+10. dopo poco tempo ti chiede se vuoi creare la configurazione di pgadmin4 e digita y e premi invio.
+
+11. digita y e poi invio per riavviare pgadmin4.
+
+12. se tutto è andato a buon fine ti aprirà la pagina studio server dove ti chiedera per quanti gioni vuoi avere un backup del database quindi inserisci il numero e premi invio.
+
+13. premi invio se non vuoi ricevere pubblicità sulla tua mail.
+
+14. una volta finito la configurazione ti mostrerà questo avviso "Congratulations, the installation is now complete!".
+
+15.  a questo punto configura il server per davinci resolve
 
 ```bash
 studio --create {nome del database} {crea la tua password}
 ```
 
-9. visualizza i database 
+16. visualizza i database 
 
 ```bash
 studio --list
 ```
 
-10. cancella il database
+17. cancella il database
 
 ```bash
 studio --delete {nome del database}
 ```
 
-11. crea un autobackup del database
+18. crea un autobackup del database
 
 ```bash
 studio --backup {nome del database}
 ```
 
-12. visualizza i backup del database
+19. visualizza i backup del database
 
 ```bash
 studio --backup-list {nome del database}
 ```
 
-13. per altri comandi visualizza la guida ufficiale [vai al sito](https://wirebear.co.uk/software/studio-server-client)
+20. per altri comandi visualizza la guida ufficiale [vai al sito](https://wirebear.co.uk/software/studio-server-client)
 
-14. NB: http:// ip-del-tuo-server/pgadmin4/login
+21. NB: http:// ip-del-tuo-server/pgadmin4/login
 username: la mail che hai inserito prima
 password: la tua password di postgres default ubuntu
 
-15.  hai finito la configurazione complimenti
+22.  hai finito la configurazione complimenti
