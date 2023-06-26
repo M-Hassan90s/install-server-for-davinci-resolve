@@ -34,41 +34,51 @@ create role admin with login superuser createdb createrole inherit replication c
 ```
 ALTER USER postgres PASSWORD 'ubuntu';
 ```
+6. esci dal database
 
-7.  configura il server per davinci resolve
+```bash
+exit
+```
+7. esci dal utente
+
+```bash
+exit
+```
+
+8.  configura il server per davinci resolve
 
 ```bash
 studio --create {nome del database} {crea la tua password}
 ```
 
-8. visualizza i database 
+9. visualizza i database 
 
 ```bash
 studio --list
 ```
 
-9. cancella il database
+10. cancella il database
 
 ```bash
 studio --delete {nome del database}
 ```
 
-10. crea un autobackup del database
+11. crea un autobackup del database
 
 ```bash
 studio --backup {nome del database}
 ```
 
-11. visualizza i backup del database
+12. visualizza i backup del database
 
 ```bash
 studio --backup-list {nome del database}
 ```
 
-12. per altri comandi visualizza la guida ufficiale [vai al sito](https://wirebear.co.uk/software/studio-server-client)
+13. per altri comandi visualizza la guida ufficiale [vai al sito](https://wirebear.co.uk/software/studio-server-client)
 
-13. NB: http:// ip-del-tuo-server/pgadmin4/login
+14. NB: http:// ip-del-tuo-server/pgadmin4/login
 username: la mail che hai inserito prima
 password: la tua password di postgres default ubuntu
 
-14.  hai finito la configurazione complimenti
+15.  hai finito la configurazione complimenti
