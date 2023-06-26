@@ -13,12 +13,14 @@ git clone https://github.com/ArduinoDenis/install-server-for-davinci-resolve.git
 listen_addresses = '*'
 ```
 
-3. aggiungi la seguente riga alla configurazione dei ruoli sul database pg_hba.conf
+3. aggiungi le seguenti righe alla configurazione dei ruoli sul database pg_hba.conf
+
+- prima riga "# Database administrative login by Unix domain socket"
 
 ```
 local   all             admin                                   md5
 ```
-
+- seconda riga alla fine della colonna: "# replication privilege"
 ```
 host    all             all             0.0.0.0/0               trust
 ```
