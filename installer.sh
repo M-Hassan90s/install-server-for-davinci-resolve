@@ -13,6 +13,7 @@ echo "configura i ruoli del database"
 sudo nano /etc/postgresql/15/main/pg_hba.conf;
 sudo systemctl restart postgresql;
 sudo -i -u postgres;
+psql;
 echo "installo pgadmin4-web"
 sudo apt install pgadmin4-web -y;
 echo "avvio il configuratore di pgadmin4"
